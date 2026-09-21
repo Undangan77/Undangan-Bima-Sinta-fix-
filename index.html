@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Undangan Pernikahan | Bima & Sinta</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;500;600;700&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Montserrat,sans-serif;color:#4c4038;background:#eee7df;line-height:1.7}
+.cover{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:30px 20px;background:linear-gradient(#46372b88,#46372bb8),url('foto-2.jpeg') center/cover;color:#fff}
+.cover-content{max-width:650px}.eyebrow{letter-spacing:5px;font-size:12px;text-transform:uppercase}
+h1,h2,.script{font-family:'Great Vibes',cursive;font-weight:400}
+.cover h1{font-size:clamp(55px,12vw,100px);line-height:1.2;margin:25px 0}
+.cover .date{font-size:16px;letter-spacing:3px}
+.btn{display:inline-block;margin-top:25px;padding:13px 28px;border:1px solid #fff;border-radius:30px;color:#fff;text-decoration:none;font-size:12px;letter-spacing:1px;background:#876b54;cursor:pointer}
+section{max-width:950px;margin:auto;padding:75px 25px;text-align:center}
+.intro,.rsvp{background:#fffaf5}.section-label{font-size:11px;letter-spacing:4px;color:#9a806a;text-transform:uppercase}
+h2{font-size:clamp(42px,7vw,65px);color:#876b54;margin:10px 0 25px}
+.quote{max-width:650px;margin:auto;font-style:italic;color:#77685d}
+.couple{display:grid;grid-template-columns:1fr 1fr;gap:35px;margin-top:40px}
+.person h3{font-family:'Great Vibes',cursive;font-size:42px;font-weight:400;color:#876b54}
+.person p{font-size:13px;margin-top:8px}
+.event{background:#e7ddd1;max-width:none}.event-inner{max-width:950px;margin:auto}
+.event-card{background:#fffaf5;padding:35px 20px;margin-top:25px;border-radius:12px;box-shadow:0 10px 30px #4b372314}
+.event-card h3{font-size:18px;letter-spacing:2px;color:#876b54}.event-card p{margin-top:12px;font-size:14px}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:35px}
+.gallery img{width:100%;height:420px;object-fit:cover;border-radius:12px;box-shadow:0 8px 25px #4b372320}
+.countdown{display:flex;justify-content:center;gap:15px;margin-top:30px;flex-wrap:wrap}
+.time-box{min-width:75px;padding:12px;background:#876b54;color:#fff;border-radius:8px}
+.time-box strong{display:block;font-size:25px}.time-box span{font-size:10px;letter-spacing:1px}
+.music-box{background:#f1e8de;padding:25px;border-radius:12px;margin:25px auto;max-width:600px}
+audio{width:100%;margin-top:15px}
+footer{background:#4c4038;color:#fff;text-align:center;padding:35px 20px;font-size:12px}
+footer .script{font-size:38px;margin-top:10px}
+@media(max-width:600px){.couple,.gallery{grid-template-columns:1fr}.gallery img{height:360px}section{padding:55px 20px}}
+
+.falling-leaf{
+  position:fixed;
+  top:-60px;
+  z-index:9999;
+  pointer-events:none;
+  width:18px;
+  height:18px;
+  background:#b96b3b;
+  clip-path:polygon(50% 0%,62% 22%,88% 12%,78% 42%,100% 55%,72% 66%,76% 94%,50% 78%,24% 100%,27% 70%,0% 58%,25% 42%,12% 15%,39% 23%);
+  opacity:.85;
+  animation:fallLeaf linear forwards;
+}
+.falling-leaf::after{
+  content:"";
+  position:absolute;
+  width:2px;
+  height:10px;
+  background:#765039;
+  left:9px;
+  top:11px;
+  transform:rotate(25deg);
+}
+@keyframes fallLeaf{
+  0%{transform:translate3d(0,-70px,0) rotate(0deg);opacity:0}
+  10%{opacity:.9}
+  50%{transform:translate3d(70px,55vh,0) rotate(180deg)}
+  100%{transform:translate3d(-80px,115vh,0) rotate(360deg);opacity:0}
+}
+
+</style>
+</head>
+<body>
+<audio id="bgMusic" loop preload="auto"><source src="music.mp3" type="audio/mpeg"></audio>
+<header class="cover">
+<div class="cover-content">
+<div class="eyebrow">The Wedding Of</div>
+<h1>Bima &amp; Sinta</h1>
+<div class="date">18 OKTOBER 2026</div>
+<a class="btn" href="#undangan" onclick="document.getElementById('bgMusic').play().catch(()=>{});">Buka Undangan</a>
+</div>
+</header>
+
+<main id="undangan">
+<section class="intro">
+<div class="section-label">Assalamu'alaikum Warahmatullahi Wabarakatuh</div>
+<h2>Dengan penuh cinta</h2>
+<p class="quote">Dengan memohon rahmat dan ridho Allah SWT, kami bermaksud mengundang Bapak/Ibu/Saudara/i untuk hadir dan memberikan doa restu pada acara pernikahan kami.</p>
+<div class="couple">
+<div class="person"><h3>Bima Sakti Setiawan</h3><p>Putra dari Bapak Iwan Setiawan &amp; Ibu Yati Rosmiati</p></div>
+<div class="person"><h3>Sinta Nuraeni</h3><p>Putri Bungsu dari Bapak Dadang &amp; Ibu Enci</p></div>
+</div>
+</section>
+
+<section>
+<div class="section-label">Our Precious Moments</div><h2>Galeri Mempelai</h2>
+<div class="gallery">
+<img src="foto-1.jpeg" alt="Foto Bima dan Sinta 1">
+<img src="foto-2.jpeg" alt="Foto Bima dan Sinta 2">
+<img src="foto-3.jpeg" alt="Foto Bima dan Sinta 3">
+<img src="foto-4.jpeg" alt="Foto Bima dan Sinta 4">
+</div>
+</section>
+
+<section class="event">
+<div class="event-inner">
+<div class="section-label">Save The Date</div><h2>Waktu &amp; Tempat</h2>
+<div class="event-card"><h3>AKAD NIKAH</h3><p>Hari/Tanggal: Minggu, 18 Oktober 2026</p><p>Waktu: 08.00 WIB – selesai</p><p>Tempat: Kp. Awilega, RT/RW 01/10, Desa Bojongsawah,<br>Kecamatan Kebonpedes, Kabupaten Sukabumi</p></div>
+<div class="event-card"><h3>RESEPSI PERNIKAHAN</h3><p>Hari/Tanggal: Minggu, 18 Oktober 2026</p><p>Waktu: 10.00 WIB – selesai</p><p>Tempat: Kp. Awilega, RT/RW 01/10, Desa Bojongsawah,<br>Kecamatan Kebonpedes, Kabupaten Sukabumi</p></div>
+<div class="countdown" id="countdown"><div class="time-box"><strong id="days">0</strong><span>HARI</span></div><div class="time-box"><strong id="hours">0</strong><span>JAM</span></div><div class="time-box"><strong id="minutes">0</strong><span>MENIT</span></div><div class="time-box"><strong id="seconds">0</strong><span>DETIK</span></div></div>
+</div>
+</section>
+
+
+<section>
+ <div class="section-label">Tanda Kasih</div><h2>Amplop Digital</h2>
+ <div class="event-card">
+  <h3>REKENING BCA</h3>
+  <p style="font-size:26px;letter-spacing:2px;margin:18px 0"><strong>1810967460</strong></p>
+  <p>Atas nama: Bima Sakti Setiawan</p>
+  <button class="btn" onclick="navigator.clipboard.writeText('1810967460').then(()=>alert('Nomor rekening Bima berhasil disalin.'))">Salin Rekening Bima</button>
+ </div>
+ <div class="event-card">
+  <h3>REKENING BCA</h3>
+  <p style="font-size:26px;letter-spacing:2px;margin:18px 0"><strong>3770650487</strong></p>
+  <p>Atas nama: Sinta Nuraeni</p>
+  <button class="btn" onclick="navigator.clipboard.writeText('3770650487').then(()=>alert('Nomor rekening Sinta berhasil disalin.'))">Salin Rekening Sinta</button>
+ </div>
+ </section>
+
+<section class="rsvp">
+<div class="section-label">Kehadiran Anda</div><h2>Doa &amp; Restu</h2>
+<p class="quote">Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu.</p>
+<a class="btn" href="https://wa.me/" target="_blank">Konfirmasi Kehadiran</a>
+</section>
+</main>
+<footer>Terima kasih atas doa dan restunya.<div class="script">Bima &amp; Sinta</div></footer>
+
+<script>
+const target=new Date("October 18, 2026 08:00:00").getTime();
+function updateCountdown(){const now=Date.now(),d=target-now;if(d<=0){document.getElementById("countdown").innerHTML="<p>Hari bahagia telah tiba!</p>";return}
+days.textContent=Math.floor(d/86400000);hours.textContent=Math.floor(d/3600000%24);minutes.textContent=Math.floor(d/60000%60);seconds.textContent=Math.floor(d/1000%60)}
+updateCountdown();setInterval(updateCountdown,1000);
+
+function createLeaf(){
+  const leaf=document.createElement("span");
+  leaf.className="falling-leaf";
+  leaf.style.left=(Math.random()*100)+"vw";
+  leaf.style.animationDuration=(7+Math.random()*7)+"s";
+  leaf.style.animationDelay=(Math.random()*2)+"s";
+  leaf.style.transform="scale("+(0.55+Math.random()*0.8)+")";
+  leaf.style.background=["#b96b3b","#c58a45","#9f5735","#d2a05b","#a94f32"][Math.floor(Math.random()*5)];
+  document.body.appendChild(leaf);
+  setTimeout(()=>leaf.remove(),16000);
+}
+setInterval(createLeaf,650);
+for(let i=0;i<12;i++){setTimeout(createLeaf,i*350);}
+
+</script>
+</body>
+</html>
